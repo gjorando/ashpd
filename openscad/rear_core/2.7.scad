@@ -7,9 +7,28 @@ module rear_core_reinforcement_bar_end(width=rear_core_reinforcing_bar_hole_widt
     rear_core_reinforcement_bar_hole(width, position);
 }
 
+/* The superior hole to put an intermediary backplate. */
+module rear_core_backplate_half_mid_hole() {
+    translate([0, (rear_core_reinforcing_bar_width-rear_core_reinforcing_bar_margin)/2, 0]) square([sheet_thickness, rear_core_reinforcing_bar_margin], true);
+}
+
+/* Full holes to put an intermediary backplate. */
+module rear_core_backplate_mid_hole() {
+    rear_core_backplate_half_mid_hole();
+    mirror([0, 1, 0]) rear_core_backplate_half_mid_hole();
+}
+
+
 /* Main reinforcing bar of the rear core. */
 module rear_core_2_7() {
-    square([rear_core_length-rear_core_reduction_length-(2*sheet_thickness), rear_core_reinforcing_bar_width], true);
+    // Base shape
+    difference() {
+        square([rear_core_length-rear_core_reduction_length-(2*sheet_thickness), rear_core_reinforcing_bar_width], true);
+    // Mid-holes
+    translate([(rear_core_intermediary_backplate_spacing+sheet_thickness)/2, 0, 0]) rear_core_backplate_mid_hole();
+    translate([-(rear_core_intermediary_backplate_spacing+sheet_thickness)/2, 0, 0]) rear_core_backplate_mid_hole();
+    }
+    // End bits
     rear_core_reinforcement_bar_end();
     mirror([1, 0, 0]) rear_core_reinforcement_bar_end();
 }
