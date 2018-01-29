@@ -30,4 +30,4 @@ module rear_core_2_1() {
     }
 }
 
-rear_core_2_1();
+linear_extrude(sheet_thickness) rear_core_2_1();
