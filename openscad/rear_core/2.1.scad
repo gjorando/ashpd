@@ -10,11 +10,11 @@ module rear_core_base_shape(reduction=0) {
 }
 
 /* A hole for the reinforcement bar. Default values are for the two primary reinforcement holes. */
-module rear_core_reinforcement_bar_hole(width=rear_core_reinforcing_bar_width, position=[(rear_core_width-sheet_thickness)/2, (rear_core_height-rear_core_width)/2, 0]) {
+module rear_core_reinforcement_bar_hole(width=rear_core_reinforcing_bar_hole_width, position=[(rear_core_width-sheet_thickness)/2, (rear_core_height-rear_core_width)/2, 0]) {
     translate(position) square([sheet_thickness, width], true);
 }
 
-/* The piece. */
+/* A backplate for the main structural shape of the rear core. */
 module rear_core_2_1() {
     difference() {
         // External shape
@@ -26,7 +26,7 @@ module rear_core_2_1() {
         // Left rear_core_reinforcement_bar_hole
         mirror([1, 0, 0]) rear_core_reinforcement_bar_hole();
         // Bottom reinforcement bar_hole
-        translate([0, -(rear_core_width-rear_core_back_reduction/2)/2, 0]) rotate([0, 0, 90]) rear_core_reinforcement_bar_hole(position=[0, 0, 0], width=rear_core_reinforcing_bar_width-4);
+        translate([0, -(rear_core_width-rear_core_back_reduction/2)/2, 0]) rotate([0, 0, 90]) rear_core_reinforcement_bar_hole(position=[0, 0, 0], width=rear_core_reinforcing_bar_hole_width-4);
     }
 }
 
