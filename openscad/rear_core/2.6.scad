@@ -3,7 +3,7 @@
  * This file is distributed under the terms of the MIT License.
  * Check https://opensource.org/licenses/MIT for more details.
  * 
- * ./rear-core/2.1.scad: secondary reinforcing bar.
+ * ./rear_core/2.1.scad: secondary reinforcing bar.
  *
  * quantity: 1
  * NB.: units are assumed to be millimeters.

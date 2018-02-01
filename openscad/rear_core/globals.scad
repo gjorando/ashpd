@@ -3,7 +3,7 @@
  * This file is distributed under the terms of the MIT License.
  * Check https://opensource.org/licenses/MIT for more details.
  * 
- * ./rear-core/globals.scad: global variables that apply to pieces from the rear core.
+ * ./rear_core/globals.scad: global variables that apply to pieces from the rear core.
  *
  * NB.: units are assumed to be millimeters.
  */
