@@ -3,14 +3,11 @@
  * This file is distributed under the terms of the MIT License.
  * Check https://opensource.org/licenses/MIT for more details.
  * 
- * ./globals.scad: some global variables that apply to every piece.
- *
+ * ./rear-core/2.2.scad: holds the screw holes for the back cover.
+ * 
+ * quantity: 1
  * NB.: units are assumed to be millimeters.
  */
 
-/*Thickness of laser cutted sheets */
-sheet_thickness = 4;
-/* Margin on the printsheet */
-print_margin = 3;
-/* Curves accuracy */
-$fn = 360;
+include <../globals.scad>
+include <./globals.scad>

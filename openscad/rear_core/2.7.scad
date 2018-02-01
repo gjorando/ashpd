@@ -1,3 +1,14 @@
+/* Copyright 2018 Guillaume JORANDON
+ * 
+ * This file is distributed under the terms of the MIT License.
+ * Check https://opensource.org/licenses/MIT for more details.
+ * 
+ * ./rear-core/2.1.scad: primary reinforcing bars.
+ *
+ * quantity: 2
+ * NB.: units are assumed to be millimeters.
+ */
+
 include <../globals.scad>
 include <./globals.scad>
 use <2.1.scad>

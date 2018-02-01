@@ -1,3 +1,13 @@
+/* Copyright 2018 Guillaume JORANDON
+ * 
+ * This file is distributed under the terms of the MIT License.
+ * Check https://opensource.org/licenses/MIT for more details.
+ * 
+ * ./printsheet.scad: a ready to cut sheet with all the pieces in the right amount.
+ *
+ * NB.: units are assumed to be millimeters.
+ */
+
 include <globals.scad>
 include <rear_core/globals.scad>
 use <rear_core/2.1.scad>
