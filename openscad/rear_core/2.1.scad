@@ -30,8 +30,8 @@ module rear_core_2_1() {
     difference() {
         // External shape
         rear_core_base_shape();
-        // Internal shape
-        rear_core_base_shape(reduction=rear_core_back_reduction);
+        // Internal shape (there is an extra reduction for the casing margin)
+        rear_core_base_shape(reduction=rear_core_back_reduction+2*rear_core_cover_casing_margin);
         // Right rear_core_reinforcement_bar_hole
         rear_core_reinforcement_bar_hole();
         // Left rear_core_reinforcement_bar_hole
