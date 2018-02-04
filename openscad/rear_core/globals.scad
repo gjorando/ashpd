@@ -59,7 +59,11 @@ rear_core_back_reduction_for_plates = ((sheet_thickness*rear_core_back_reduction
 rear_core_back_total_n_plates = ceil(rear_core_back_reduction/rear_core_back_reduction_for_plates);
 /* Margin for the cover casing */
 rear_core_cover_casing_margin = 4;
-/* diameter of the hole for the screws of the cover */
+/* radius of the hole for the bolts of the cover */
 rear_core_cover_screws_hole_radius = 2;
+/* radius of the hole for the nuts of the cover */
 rear_core_cover_nut_radius = 2*rear_core_cover_screws_hole_radius;
+/* margin for the screw holes supports of the cover */
 rear_core_cover_screws_hole_support_margin = 2;
+/* radius of the hole for the rear shell attaching rod */
+rear_core_rear_shell_attaching_rod_radius = 4;
