@@ -14,6 +14,7 @@ include <./globals.scad>
 use <./2.1.scad>
 
 module rear_core_2_3b() {
+    translate([rear_core_width/2, rear_core_width/2, 0])
     difference() {
         rear_core_base_shape(reduction=3*rear_core_back_reduction_for_plates);
         rear_core_base_shape(reduction=rear_core_back_reduction+2*rear_core_cover_casing_margin);

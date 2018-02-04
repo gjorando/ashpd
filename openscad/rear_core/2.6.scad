@@ -15,9 +15,11 @@ use <2.7.scad>
 
 /* Secondary reinforcing bar of the rear core. */
 module rear_core_2_6() {
-    square([rear_core_length-rear_core_reduction_length-(2*sheet_thickness), rear_core_reinforcing_bar_width-4], true);
-    rear_core_reinforcement_bar_end(width=rear_core_reinforcing_bar_hole_width-4);
-    mirror([1, 0, 0]) rear_core_reinforcement_bar_end(width=rear_core_reinforcing_bar_hole_width-4);
+    translate([rear_core_length/2 - rear_core_reduction_length, rear_core_reinforcing_bar_width/2, 0]) {
+        square([rear_core_length-2*(rear_core_reduction_length+sheet_thickness), rear_core_reinforcing_bar_width-4], true);
+        rear_core_reinforcement_bar_end(width=rear_core_reinforcing_bar_hole_width-4);
+        mirror([1, 0, 0]) rear_core_reinforcement_bar_end(width=rear_core_reinforcing_bar_hole_width-4);
+    }
 }
 
 linear_extrude(sheet_thickness) rear_core_2_6();

@@ -27,6 +27,7 @@ module rear_core_reinforcement_bar_hole(width=rear_core_reinforcing_bar_hole_wid
 
 /* A backplate for the main structural shape of the rear core. */
 module rear_core_2_1() {
+    translate([rear_core_width/2, rear_core_width/2, 0]) 
     difference() {
         // External shape
         rear_core_base_shape();
@@ -40,5 +41,7 @@ module rear_core_2_1() {
         translate([0, -(rear_core_width-rear_core_back_reduction/2)/2, 0]) rotate([0, 0, 90]) rear_core_reinforcement_bar_hole(position=[0, 0, 0], width=rear_core_reinforcing_bar_hole_width-4);
     }
 }
+
+function rear_core_2_1_dims() = [rear_core_width, rear_core_height, 0];
 
 linear_extrude(sheet_thickness) rear_core_2_1();
