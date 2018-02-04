@@ -62,6 +62,8 @@ rear_core_back_total_n_plates = ceil(rear_core_back_reduction/rear_core_back_red
 rear_core_cover_casing_margin = 4;
 /* radius of the hole for the bolts of the cover */
 rear_core_cover_screws_hole_radius = 2;
+/* radius of the hole for the heads' bolts on the cover */
+rear_core_cover_screws_head_radius = 4;
 /* radius of the hole for the nuts of the cover */
 rear_core_cover_nut_radius = 2*rear_core_cover_screws_hole_radius;
 /* margin for the screw holes supports of the cover */

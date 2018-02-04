@@ -15,10 +15,11 @@ use <./2.1.scad>
 
 /* A single screw support */
 module rear_core_cover_screws_hole_support() {
-    rotate([0, 0, 45]) translate([-((rear_core_width-rear_core_back_reduction)/2 - rear_core_cover_casing_margin - rear_core_cover_screws_hole_radius), 0, 0]) {
-        difference() {
+    rotate([0, 0, 45])
+    translate([-((rear_core_width-rear_core_back_reduction)/2 - 2*rear_core_cover_casing_margin - rear_core_cover_screws_hole_radius), 0, 0]) {
+        hull() {
             circle(rear_core_cover_screws_hole_radius+2*rear_core_cover_screws_hole_support_margin);
-            circle(rear_core_cover_screws_hole_radius);
+            translate([-2*(rear_core_cover_screws_hole_radius+2*rear_core_cover_screws_hole_support_margin), 0, 0]) circle(rear_core_cover_screws_hole_radius+2*rear_core_cover_screws_hole_support_margin);
         }
     }
 }
@@ -35,14 +36,39 @@ module rear_core_cover_screws_hole_supports() {
     }
 }
 
+/* A single screw hole */
+module rear_core_cover_screws_hole(radius=rear_core_cover_screws_hole_radius) {
+    rotate([0, 0, 45])
+    translate([-((rear_core_width-rear_core_back_reduction)/2 - 2*rear_core_cover_casing_margin - rear_core_cover_screws_hole_radius), 0, 0]) circle(radius);
+}
+
+/* The four screw holes */
+module rear_core_cover_screws_holes(radius=rear_core_cover_screws_hole_radius) {
+    translate([rear_core_width/2, rear_core_width/2, 0]) {
+        rear_core_cover_screws_hole(radius);
+        mirror([1, 0, 0]) rear_core_cover_screws_hole(radius);
+        translate([0, rear_core_height-rear_core_width , 0]) mirror([0, 1, 0]) {
+        rear_core_cover_screws_hole(radius);
+        mirror([1, 0, 0]) rear_core_cover_screws_hole(radius);
+        }
+    }
+}
+
 /* Right after the backplate, this holds the screws of the back cover. */
 module rear_core_2_2() {
-    translate([rear_core_width/2, rear_core_width/2, 0]) difference() {
-        rear_core_base_shape(reduction=rear_core_back_reduction_for_plates);
-        rear_core_base_shape(reduction=rear_core_back_reduction+2*rear_core_cover_casing_margin);
+    difference() {
+        union() {
+            translate([rear_core_width/2, rear_core_width/2, 0]) {
+                difference() {
+                    rear_core_base_shape(reduction=rear_core_back_reduction_for_plates);
+                    rear_core_base_shape(reduction=rear_core_back_reduction+2*rear_core_cover_casing_margin);
+                }
+            }
+            
+            rear_core_cover_screws_hole_supports();
+        }
+        rear_core_cover_screws_holes();
     }
-    
-        rear_core_cover_screws_hole_supports();
 }
 
 linear_extrude(sheet_thickness) rear_core_2_2();

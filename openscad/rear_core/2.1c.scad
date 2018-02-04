@@ -15,7 +15,13 @@ use <./2.1.scad>
 
 /* A single nut support */
 module rear_core_cover_nut_support() {
-    rotate([0, 0, 45]) translate([-((rear_core_width-rear_core_back_reduction)/2 - rear_core_cover_casing_margin - rear_core_cover_screws_hole_radius), 0, 0]) circle(rear_core_cover_nut_radius+2*rear_core_cover_screws_hole_support_margin);
+    rotate([0, 0, 45])
+    translate([-((rear_core_width-rear_core_back_reduction)/2 - 2*rear_core_cover_casing_margin - rear_core_cover_screws_hole_radius), 0, 0]) {
+        hull() {
+            circle(rear_core_cover_nut_radius+2*rear_core_cover_screws_hole_support_margin);
+            translate([-2*(rear_core_cover_screws_hole_radius+2*rear_core_cover_screws_hole_support_margin), 0, 0]) circle(rear_core_cover_nut_radius+2*rear_core_cover_screws_hole_support_margin);
+        }
+    }
 }
 
 /* The four nut supports */
@@ -33,7 +39,7 @@ module rear_core_cover_nut_supports() {
 /* A single nut hole */
 module rear_core_cover_nut_hole() {
     rotate([0, 0, 45])
-    translate([-((rear_core_width-rear_core_back_reduction)/2 - rear_core_cover_casing_margin - rear_core_cover_screws_hole_radius), 0, 0]) circle(rear_core_cover_nut_radius, $fn=6);
+    translate([-((rear_core_width-rear_core_back_reduction)/2 - 2*rear_core_cover_casing_margin - rear_core_cover_screws_hole_radius), 0, 0]) circle(rear_core_cover_nut_radius, $fn=6);
 }
 
 /* The four nut holes */

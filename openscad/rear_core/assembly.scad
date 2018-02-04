@@ -16,6 +16,8 @@ use <2.1c.scad>
 use <2.2.scad>
 use <2.3.scad>
 use <2.3b.scad>
+use <2.4.scad>
+use <2.5.scad>
 use <2.6.scad>
 use <2.7.scad>
 use <2.8.scad>
@@ -34,6 +36,10 @@ translate([0, sheet_thickness+rear_core_reduction_length, 0]) {
     translate([0, rear_core_2_7_dims()[0]+sheet_thickness, 0]) rotate([90, 0, 0]) linear_extrude(sheet_thickness) rear_core_2_3();
     //2_3b x1
     translate([0, rear_core_2_7_dims()[0]+2*sheet_thickness, 0]) rotate([90, 0, 0]) linear_extrude(sheet_thickness) rear_core_2_3b();
+    //2_4 x1
+    translate([rear_core_width, rear_core_2_7_dims()[0], 0]) rotate([90, 0, 180]) linear_extrude(sheet_thickness) rear_core_2_4();
+    //2_5 x1
+    translate([rear_core_width, rear_core_2_7_dims()[0]+sheet_thickness, 0]) rotate([90, 0, 180]) linear_extrude(sheet_thickness) rear_core_2_5();
     //2_6 x1
     translate([(rear_core_width-rear_core_reinforcing_bar_width)/2, -sheet_thickness, rear_core_back_reduction/4+sheet_thickness/2]) rotate([180, 0, 90]) linear_extrude(sheet_thickness) rear_core_2_6();
     //2_7 x2
