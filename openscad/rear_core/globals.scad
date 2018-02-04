@@ -35,6 +35,7 @@ rear_core_reinforcing_bar_hole_width = rear_core_reinforcing_bar_width - 2*rear_
 
 /* Lips are built by stacking multiple layers, and because it's a lip we need to reduce each layer so that we can then get a nice slope. */
 rear_core_back_reduction_for_plates = ((sheet_thickness*rear_core_back_reduction)/(2*rear_core_reduction_length)) * 2;
+rear_core_front_reduction_for_plates = ((sheet_thickness*rear_core_front_reduction)/(2*rear_core_reduction_length)) * 2;
 /* Demo: Let's do some trigonometry. Take a right-angled triangle.
     |\
     | \ h
