@@ -16,6 +16,8 @@ use <rear_core/2.1c.scad>
 use <rear_core/2.2.scad>
 use <rear_core/2.3.scad>
 use <rear_core/2.3b.scad>
+use <rear_core/2.4.scad>
+use <rear_core/2.5.scad>
 use <rear_core/2.6.scad>
 use <rear_core/2.7.scad>
 use <rear_core/2.8.scad>
@@ -33,6 +35,10 @@ translate([2*print_margin+rear_core_2_1_dims()[0], 2*print_margin+rear_core_2_1_
 translate([3*print_margin+2*rear_core_2_1_dims()[0], 2*print_margin+rear_core_2_1_dims()[1], 0]) rear_core_2_3();
 // 2.3b x1
 translate([print_margin, 3*print_margin+2*rear_core_2_1_dims()[1], 0]) rear_core_2_3b();
+// 2.4 x1
+translate([4*print_margin+3*rear_core_2_1_dims()[0], 2*print_margin+rear_core_2_1_dims()[1], 0]) rear_core_2_4();
+// 2.5 x1
+translate([4*print_margin+3*rear_core_2_1_dims()[0], 3*print_margin+2*rear_core_2_1_dims()[1], 0]) rear_core_2_5();
 // 2.6 x1
 translate([2*print_margin + rear_core_2_1_dims()[0], 3*print_margin + 2*rear_core_2_1_dims()[1], 0]) rear_core_2_6();
 // 2.7 x2

@@ -70,3 +70,21 @@ rear_core_cover_nut_radius = 2*rear_core_cover_screws_hole_radius;
 rear_core_cover_screws_hole_support_margin = 2;
 /* radius of the hole for the rear shell attaching rod */
 rear_core_rear_shell_attaching_rod_radius = 4;
+/* radius of the handle */
+rear_core_handle_radius = 5;
+/* radius of the handle holes */
+rear_core_handle_hole_radius = 2;
+/* how far is the handle from the bottom of the cover */
+rear_core_handle_offset_from_bottom = 2;
+/* handle total length */
+rear_core_handle_length = 75;
+/* width of a hole for a USB connector (not the actual size of the usb connector itself, but the size of your USB piece) */
+rear_core_usb_width = 10;
+/* height of a hole for a USB connector (not the actual size of the usb connector itself, but the size of your USB piece) */
+rear_core_usb_height = 5;
+/* margin between two usb holes */
+rear_core_usb_margin = 3;
+/* radius of the hole for the power switch */
+rear_core_power_radius = 3;
+/* radius of the trigger buttons */
+rear_core_trigger_radius = 3;
