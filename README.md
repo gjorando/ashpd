@@ -2,4 +2,4 @@
 
 ## TODO
 
-* See if maybe we could blind the front backplate, and add bolt holes on both the front plate and the front backplate for more solidity.
+* Add attachement screw holes for the junction between the cores.

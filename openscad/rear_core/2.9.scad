@@ -24,7 +24,7 @@ module rear_core_2_9() {
                     translate([-front_core_width/2, 0, 0]) square([front_core_width, front_core_width]);
                 }
                 translate([-front_core_width/2, 0, 0]) square([front_core_width, (front_core_partial_height-(front_core_width/2))]);
-                // TODO add holes
+                // TODO replace this mess with a projection of pieces
                 
                 translate([0, front_core_tube_elevation-(front_core_width-front_core_tube_diameter)/2, 0]) circle(front_core_tube_diameter/2);
             }
