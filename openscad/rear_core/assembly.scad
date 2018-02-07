@@ -21,6 +21,8 @@ use <2.5.scad>
 use <2.6.scad>
 use <2.7.scad>
 use <2.8.scad>
+use <2.9.scad>
+use <2.9b.scad>
 
 handle_width = 43;
 handle_inner_radius = 5;
@@ -75,6 +77,10 @@ module assembly() {
         translate([rear_core_width-sheet_thickness, -sheet_thickness, 1+rear_core_width/2]) rotate([90, 0, 90]) linear_extrude(sheet_thickness) rear_core_2_7();
         //2_8 x1
         translate([0, -sheet_thickness, 0]) rotate([90, 0, 0]) linear_extrude(sheet_thickness) rear_core_2_8();
+        //2_9 x1
+        translate([0, -2*sheet_thickness, 0]) rotate([90, 0, 0]) linear_extrude(sheet_thickness) rear_core_2_9();
+        //2_9b x1
+        translate([0, -3*sheet_thickness, 0]) rotate([90, 0, 0]) linear_extrude(sheet_thickness) rear_core_2_9b();
         
         /* extras */
         

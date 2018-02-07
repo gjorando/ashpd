@@ -14,3 +14,6 @@ sheet_thickness = 4;
 print_margin = 3;
 /* Curves accuracy */
 $fn = 360;
+
+/* Distance between the border of the bottom of the frontest plate of the rear_core and the bottom of the front core */
+cores_offset = 16;
