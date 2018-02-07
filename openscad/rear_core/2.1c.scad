@@ -26,13 +26,16 @@ module rear_core_cover_nut_support() {
 
 /* The four nut supports */
 module rear_core_cover_nut_supports() {
-    translate([rear_core_width/2, rear_core_width/2, 0]) {
-        rear_core_cover_nut_support();
-        mirror([1, 0, 0]) rear_core_cover_nut_support();
-        translate([0, rear_core_height-rear_core_width , 0]) mirror([0, 1, 0]) {
-        rear_core_cover_nut_support();
-        mirror([1, 0, 0]) rear_core_cover_nut_support();
+    translate([rear_core_width/2, rear_core_width/2, 0]) intersection() {
+        union() {
+            rear_core_cover_nut_support();
+            mirror([1, 0, 0]) rear_core_cover_nut_support();
+            translate([0, rear_core_height-rear_core_width , 0]) mirror([0, 1, 0]) {
+            rear_core_cover_nut_support();
+            mirror([1, 0, 0]) rear_core_cover_nut_support();
+            }
         }
+        rear_core_base_shape(reduction=rear_core_back_reduction_for_plates);
     }
 }
 

@@ -10,6 +10,7 @@
  */
 
 include <../globals.scad>
+include <../front_core/globals.scad>
 include <./globals.scad>
 use <./2.1.scad>
 

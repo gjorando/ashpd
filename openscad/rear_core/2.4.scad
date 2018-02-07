@@ -37,12 +37,12 @@ module rear_core_2_4() {
             circle(rear_core_handle_hole_radius, true);
             translate([0, rear_core_handle_length-2*rear_core_handle_radius, 0]) circle(rear_core_handle_hole_radius, true);
         }
-        translate([(rear_core_width-rear_core_back_reduction-2*rear_core_cover_casing_margin)*0.3+rear_core_cover_casing_margin + rear_core_back_reduction/2, (rear_core_height-rear_core_back_reduction-2*rear_core_cover_casing_margin)*0.25+rear_core_cover_casing_margin + rear_core_back_reduction/2, 0]) {
+        translate([(rear_core_width-rear_core_back_reduction-2*rear_core_cover_casing_margin)*0.17+rear_core_cover_casing_margin + rear_core_back_reduction/2, (rear_core_height-rear_core_back_reduction-2*rear_core_cover_casing_margin)*0.35+rear_core_cover_casing_margin + rear_core_back_reduction/2, 0]) {
             usb_hole();
             translate([0, rear_core_usb_height + rear_core_usb_margin, 0]) usb_hole();
             translate([0, rear_core_power_radius + 1.5*rear_core_usb_height + 2*rear_core_usb_margin, 0]) circle(rear_core_power_radius);
         }
-        translate([(rear_core_width-rear_core_back_reduction-2*rear_core_cover_casing_margin)*0.3+rear_core_cover_casing_margin + rear_core_back_reduction/2, rear_core_height - rear_core_back_reduction/2 - rear_core_cover_casing_margin - (rear_core_height-rear_core_back_reduction-2*rear_core_cover_casing_margin)*0.25, 0]) {
+        translate([(rear_core_width-rear_core_back_reduction-2*rear_core_cover_casing_margin)*0.3+rear_core_cover_casing_margin + rear_core_back_reduction/2, rear_core_height - rear_core_back_reduction/2 - rear_core_cover_casing_margin - (rear_core_height-rear_core_back_reduction-2*rear_core_cover_casing_margin)*0.3, 0]) {
             translate([rear_core_trigger_radius + rear_core_usb_margin/2, 0, 0]) circle(rear_core_trigger_radius);
             translate([-rear_core_trigger_radius - rear_core_usb_margin/2, 0, 0]) circle(rear_core_trigger_radius);
         }
