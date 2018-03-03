@@ -15,7 +15,7 @@ front_core_height = 128;
 /* Total length of the front core */
 front_core_length = 161;
 /* Total width of the front core */
-front_core_width = 102;
+front_core_width = 100;
 /* height from bottom to the first lip */
 front_core_partial_height = 61;
 /* height from bottom of the piece to the top of the inner floor */
@@ -28,3 +28,8 @@ front_core_lip_reduction = 16;
 front_core_tube_elevation = 47;
 /* outer diameter of the transparent tubular core */
 front_core_tube_diameter = 55;
+/* lip inner slope length */
+front_core_lip_inner_slope = 5;
+/* thickness of the PVC tube for the lower part of the front core */
+echo("WARNING: please check lower_tube_thickness");
+lower_tube_thickness = 6;
