@@ -11,11 +11,16 @@
 
 include <../globals.scad>
 include <./globals.scad>
+include <../front_core/globals.scad>
 use <./2.1.scad>
+use <../front_core/1A.1.scad>
 
 module rear_core_2_8() {
-    translate([rear_core_width/2, rear_core_width/2, 0])
+    difference() {
+        translate([rear_core_width/2, rear_core_width/2, 0])
     rear_core_base_shape(reduction=rear_core_front_reduction_for_plates);
+        translate([(rear_core_width-front_core_width)/2, cores_offset+3*rear_core_front_reduction_for_plates/2, 0]) front_core_junction_holes();
+    }
 }
 
 linear_extrude(sheet_thickness) rear_core_2_8();

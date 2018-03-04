@@ -78,6 +78,19 @@ module front_core_inner_walls_attaching_holes() {
     }
 }
 
+module front_core_junction_hole() {
+    translate([11, 8, 0]) circle(front_core_junction_hole_diameter/2);
+}
+
+module front_core_junction_holes() {
+    translate([front_core_width/2, 20, 0]) {
+        front_core_junction_hole();
+        rotate([0, 0, 180]) front_core_junction_hole();
+        rotate([180, 0, 0]) front_core_junction_hole();
+        rotate([0, 180, 0]) front_core_junction_hole();
+    }
+}
+
 module front_core_1A_1() {
     difference() { 
         front_core_1A_1_base();
@@ -85,6 +98,7 @@ module front_core_1A_1() {
             front_core_tube_cut();
             front_core_floor_attaching_holes();
             front_core_inner_walls_attaching_holes();
+            front_core_junction_holes();
         }
     }
 }

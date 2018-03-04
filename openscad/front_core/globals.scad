@@ -33,11 +33,18 @@ front_core_tube_back_border_size = 5;
 /* lip inner slope width */
 front_core_lip_inner_slope = 5;
 /* thickness of the PVC tube for the lower part of the front core */
-echo("WARNING: please check lower_tube_thickness");
 front_core_lower_tube_thickness = 3;
+/* thickness of the transparent center core */
+front_core_center_core_thickness = 3;
+/* length of the center core tube, including the extra space in the rear core, and the extra space on the front */
+front_core_center_core_length = 117 + 2*sheet_thickness;
+/* distance from the front of the piece */
+front_core_center_core_offset = 44;
 /* length of holes to attach the floor of the piece */
 front_core_floor_hole = 10;
 /* distance between the two attaching holes of the floor */
 front_core_floor_hole_distance = 24;
 /* length of holes to attach the inner walls of the piece */
 front_core_inner_walls_hole = front_core_floor_hole;
+/* hole of the junction screws */
+front_core_junction_hole_diameter = 5;
