@@ -51,7 +51,7 @@ module handle() {
     }
 }
 
-module assembly() {
+module rear_core_assembly() {
     translate([0, sheet_thickness+rear_core_reduction_length, 0]) {
         //2_1 x1
         rotate([90, 0, 0]) linear_extrude(sheet_thickness) rear_core_2_1();
@@ -89,4 +89,4 @@ module assembly() {
     }
 }
 
-assembly();
+rear_core_assembly();
