@@ -28,6 +28,8 @@ front_core_lip_reduction = 16;
 front_core_tube_elevation = 42;
 /* outer diameter of the transparent tubular core */
 front_core_tube_diameter = 55;
+/* size of the back border of the transparent core */
+front_core_tube_back_border_size = 5;
 /* lip inner slope width */
 front_core_lip_inner_slope = 5;
 /* thickness of the PVC tube for the lower part of the front core */
