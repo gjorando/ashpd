@@ -48,3 +48,7 @@ front_core_floor_hole_distance = 24;
 front_core_inner_walls_hole = front_core_floor_hole;
 /* hole of the junction screws */
 front_core_junction_hole_diameter = 5;
+/* hole of the junction nuts */
+front_core_junction_nut_diameter = front_core_junction_hole_diameter*2;
+/* length of the front core if we remove the junction with 1B */
+front_core_partial_length = 110 + 2*sheet_thickness;

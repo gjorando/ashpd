@@ -71,7 +71,7 @@ module front_core_inner_walls_attaching_hole() {
 
 module front_core_inner_walls_attaching_holes() {
     union() {
-        translate([front_core_width/2, front_core_inner_floor_height + (front_core_partial_height-front_core_inner_floor_height-front_core_inner_walls_hole)/2, 0]) {
+        translate([front_core_width/2, front_core_inner_floor_height + (front_core_partial_height-front_core_inner_floor_height- front_core_inner_walls_hole)/2, 0]) {
             mirror([1, 0, 0]) front_core_inner_walls_attaching_hole();
             front_core_inner_walls_attaching_hole();
         }
