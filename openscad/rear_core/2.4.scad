@@ -34,8 +34,8 @@ module rear_core_2_4() {
             }
         }
         translate([rear_core_width/2, rear_core_handle_radius + rear_core_handle_offset_from_bottom + rear_core_cover_casing_margin + rear_core_back_reduction/2, 0]) {
-            circle(rear_core_handle_hole_radius, true);
-            translate([0, rear_core_handle_length-2*rear_core_handle_radius, 0]) circle(rear_core_handle_hole_radius, true);
+            circle(rear_core_handle_hole_radius);
+            translate([0, rear_core_handle_length-2*rear_core_handle_radius, 0]) circle(rear_core_handle_hole_radius);
         }
         translate([(rear_core_width-rear_core_back_reduction-2*rear_core_cover_casing_margin)*0.17+rear_core_cover_casing_margin + rear_core_back_reduction/2, (rear_core_height-rear_core_back_reduction-2*rear_core_cover_casing_margin)*0.35+rear_core_cover_casing_margin + rear_core_back_reduction/2, 0]) {
             usb_hole();
