@@ -6,8 +6,6 @@
 * Rear core: handle screws and length
 * Rear core: holes for buttons and ports
 * Front core: vent holes on the curved surface
-* Front core: insert for the transparent tube
-* Barrel: inside design
 * Whole design: routes for the wiring
 * Whole design: a few details here and there, see https://www.thingiverse.com/thing:3579224 for guidance
 
