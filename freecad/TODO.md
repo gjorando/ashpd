@@ -8,7 +8,6 @@
 * Rear shell: attachement system with the rear core
 * Rear shell: hole for the lens
 * Rear shell: inserts for the finger wires
-* Rear shell: cut an indent for the overlapping part of the rear core
 * Front shell
 * Fingers + their fixations on the other parts + tubular inserts for the wires
 * Find the best way to cutout each piece for printing
