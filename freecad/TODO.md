@@ -6,8 +6,9 @@
 * Rear core: holes for buttons and ports
 * Whole design: a few details here and there, see https://www.thingiverse.com/thing:3579224 for guidance
 * Rear shell: attachement system with the rear core
-* Rear shell: hole for the lens
+* Rear core: hole for the lens
 * Rear shell: inserts for the finger wires
+* Rear shell: size of the lens
 * Front shell
 * Fingers + their fixations on the other parts + tubular inserts for the wires
 * Find the best way to cutout each piece for printing
