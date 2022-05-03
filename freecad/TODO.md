@@ -4,7 +4,6 @@
 * Rear core: lid screws and nuts
 * Rear core: handle screws and length
 * Rear core: holes for buttons and ports
-* Whole design: routes for the wiring
 * Whole design: a few details here and there, see https://www.thingiverse.com/thing:3579224 for guidance
 * Rear shell: attachement system with the rear core
 * Rear shell: hole for the lens
