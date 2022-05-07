@@ -1,3 +1,4 @@
 *.blend1
 .~lock.*
 *.FCStd1
+/source_files/
