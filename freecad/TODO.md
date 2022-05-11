@@ -7,6 +7,5 @@
 * Rear shell: size of the lens, fixation for the lens (depends of the lens)
 * Whole design: a few details here and there, see https://www.thingiverse.com/thing:3579224 for guidance
 * Front shell
-* Fingers: tubular inserts for the wires
 * Finger supports: supports on the front shell, screw dimensions, LED holes dimensions
 * Find the best way to cutout each piece for printing
