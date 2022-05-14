@@ -7,3 +7,17 @@
 * Front shell
 * Finger supports: supports on the front shell, LED holes dimensions
 * Find the best way to cutout each piece for printing
+
+
+## Finished pieces
+
+* [X] Finger base
+* [X] Finger body (L+R)
+* [X] Finger type
+* [X] Finger wire insert
+* [X] Rear core
+* [ ] Rear core lid
+* [X] Front core
+* [X] Barrel
+* [X] Rear shell
+* [ ] Front shell
