@@ -4,8 +4,8 @@
 * Rear core: handle screws and length (depends of the handle)
 * Rear core: holes for buttons and ports (depends of the wiring)
 * Whole design: a few details here and there, see https://www.thingiverse.com/thing:3579224 for guidance
-* Front shell
-* Finger supports: supports on the front shell, LED holes dimensions
+* Front shell: attachment with the front core
+* Finger supports: LED holes dimensions
 * Find the best way to cutout each piece for printing
 
 
