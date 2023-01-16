@@ -1,9 +1,7 @@
-#TODO
+# TODO
 
-* Rear core: inner part of the transparent tube insert (depends of the thickness of the transparent tube, and the diameter of the central rod)
 * Rear core: handle screws and length (depends of the handle)
 * Rear core: holes for buttons and ports (depends of the wiring)
-* Finger supports: LED holes dimensions
 * Find the best way to cutout each piece for printing
 
 
