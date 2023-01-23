@@ -34,6 +34,12 @@ Coming soon...
 * Portal and the Portal logo are trademarks and/or registered trademarks of Valve Corporation. All other trademarks are property of their respective owners. © 2023 Valve Corporation. All rights reserved.
 * A huge thank you to [Lucas Lombard](https://github.com/lululombard) for his advice and material support during the conception and construction of this project. I couldn't have done it without you.
 
+## TODO list: minor pieces
+
+- [ ] speaker cover
+- [ ] LED ring holder for the barrel
+- [ ] LED holder for the rod
+
 ## Roadmap for a V2
 
 * Rebuild from the ground each piece (on either FreeCad or Fusion 360), being more mindful of the dependencies between each operation. The current FreeCAD file is a mess and trying to change some values can break everything.
