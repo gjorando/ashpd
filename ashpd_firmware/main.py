@@ -20,6 +20,9 @@ def orange_callback(p):
 
     :param p: Pin.
     """
+    global AUDIO_PLAYER
+    if AUDIO_PLAYER.isplaying():  # This avoids change while the sound is still playing
+        return
     global current_color
     global portal_sound
     portal_sound = "fire_orange.wav"
@@ -32,6 +35,9 @@ def blue_callback(p):
 
         :param p: Pin.
         """
+    global AUDIO_PLAYER
+    if AUDIO_PLAYER.isplaying():  # This avoids change while the sound is still playing
+        return
     global current_color
     global portal_sound
     portal_sound = "fire_blue.wav"
