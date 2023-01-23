@@ -39,6 +39,7 @@ Coming soon...
 - [ ] speaker cover
 - [ ] LED ring holder for the barrel
 - [ ] LED holder for the rod
+- [ ] USB-C support if I cannot manage to make the current cable work
 
 ## Roadmap for a V2
 
